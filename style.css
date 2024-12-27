@@ -110,7 +110,7 @@ background: #fff;
 }
 .menu1 {
     display: flex;
-    margin-left: 7PX;
+    /* margin-left: 7PX; */
     padding: 10PX;
     margin-top: 12PX;
     font-size: 20PX;
