@@ -3,9 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-.monNav{
-    margin-left: 500PX;
+#monNav{
+  
     margin-top: 103px;
+}
+@media (max-width:480PX) {
+    .monNav{
+        margin-left: 100PX;
+    }
 }
 p{
     font-size: 23PX;
