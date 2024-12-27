@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.monNav{
+    margin-left: 500PX;
+    margin-top: 103px;
+}
+p{
+    font-size: 23PX;
+    color: rgb(102, 102, 163);
+}
+#auto{
+    width: 190PX;
+}
+#manu{
+    width: 190PX;
+}

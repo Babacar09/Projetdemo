@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin-left: 505PX;
+    margin-top: 22PX;
+}
+.inscription{
+    font-size: 23PX;
+}
+.form{
+    margin-top: 15PX;
+}
+#nom{
+    height: 32PX;
+    width: 240PX;
+    border: solid 1PX rgb(217, 217, 217);
+    border-radius: 7PX;
+}
+#prenom{
+    height: 32PX;
+    width: 240PX;
+    border: solid 1PX rgb(217, 217, 217);
+    border-radius: 7PX;
+}
+#email{
+    height: 32PX;
+    width: 240PX;
+    border: solid 1PX rgb(217, 217, 217);
+    border-radius: 7PX;
+}
