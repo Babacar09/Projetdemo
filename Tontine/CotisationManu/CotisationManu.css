@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: auto;
+    height: auto;
+    margin-top: 34%;
+   
+}
+.container p{
+    font-size: 15PX;
+    font-weight: 700;
+    text-align: center;
+}
+.container img{
+    width: 100PX;
+    height: 100PX;
+    margin-left: 30%;
+}
+.container #valid{
+    width: 310PX;
+}
+
