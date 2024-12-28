@@ -204,19 +204,20 @@ background: #fff;
 .block5 .montantDesOperations{
 /* margin-left: 164PX; */
 padding-top: 10PX;
-font-size: 17PX;
+font-size: 12PX;
 color: blue;
 font-weight: bold;
 }
 .block5 .montantDepots{
     margin-top: 10PX;
-    font-size: 17PX;
+    font-size: 12PX;
 }
 .block5 .dateOperation{
     display: flex;
 }
 .block5 h3{
     color: blue;
+    font-size: 12PX;
 }
 .block5 .montantOperation{
     margin-left: 280PX;

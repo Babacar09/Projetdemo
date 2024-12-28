@@ -23,78 +23,79 @@
             <p class="historiquedescotisations">historique des cotisations</p>
         </div>
         <div class="block5">
-           
+    
             <div class="descriptionOperation">
-               
-                  
+    
+    
                 <h3 class="titreRetraits">cotisation</h3>
                 <span class="dateOperationRetraits" id="mesDates"> 27/12/2024</span>
-                
+    
                 <h3 class="titreDepots">cotisation </h3>
                 <span class="dateOperationDepots">27/12/2024</span>
-             
-             
+    
+    
             </div>
-             <div class="montantDesOperations">
-                    <p class="montantRetrait">5000</p>
-                    <p class="montantDepots">5000</p>
+            <div class="montantDesOperations">
+                <p class="montantRetrait" id="monChiffres">5000</p>
+                 <!-- <p class="montantDepots">5000</p>  -->
             </div>
-             
-             <div class="descriptionOperation">
-                  
-                <h3 class="titreRetraits">cotisation</h3>
-                <span class="dateOperationRetraits"> 27/12/2024</span>
-                
-                <h3 class="titreDepots">cotisation </h3>
-                <span class="dateOperationDepots">27/12/2024</span>
-             
-             
-            </div>
-             <div class="montantDesOperations">
-                    <p class="montantRetrait">5000</p>
-                    <p class="montantDepots">5000</p>
-            </div> 
+     
             <div class="descriptionOperation">
-               
-                  
+    
                 <h3 class="titreRetraits">cotisation</h3>
                 <span class="dateOperationRetraits"> 27/12/2024</span>
-                
+    
                 <h3 class="titreDepots">cotisation </h3>
                 <span class="dateOperationDepots">27/12/2024</span>
-             
-             
+    
+    
             </div>
-             <div class="montantDesOperations">
-                    <p class="montantRetrait">5000</p>
-                    <p class="montantDepots">5000</p>
+            <div class="montantDesOperations">
+                <p class="montantRetrait">5000</p>
+                <p class="montantDepots">5000</p>
             </div>
-             
-             <div class="descriptionOperation">
-                  
+            <div class="descriptionOperation">
+    
+    
                 <h3 class="titreRetraits">cotisation</h3>
                 <span class="dateOperationRetraits"> 27/12/2024</span>
-                
+    
                 <h3 class="titreDepots">cotisation </h3>
                 <span class="dateOperationDepots">27/12/2024</span>
-             
-             
+    
+    
             </div>
-             <div class="montantDesOperations">
-                    <p class="montantRetrait">5000</p>
-                    <p class="montantDepots">5000</p>
-            </div> 
-            <!-- <div class="accesalargent">  </div> -->
-                  <button type="button" class="btn btn-outline-secondary" disabled id="argent">Access a l'argent</button>  
-          
-
-    </div>
+            <div class="montantDesOperations">
+                <p class="montantRetrait">5000</p>
+                <p class="montantDepots">5000</p>
+            </div>
+    
+            <div class="descriptionOperation">
+    
+                <h3 class="titreRetraits">cotisation</h3>
+                <span class="dateOperationRetraits"> 27/12/2024</span>
+    
+                <h3 class="titreDepots">cotisation </h3>
+                <span class="dateOperationDepots">27/12/2024</span>
+    
+    
+            </div>
+            <div class="montantDesOperations">
+                <p class="montantRetrait">5000</p>
+                <p class="montantDepots">5000</p>
+            </div>
+            <div class="accesalargent">
+                <button type="button" class="btn btn-outline-secondary" disabled id="argent">Access a l'argent</button>
+    
+            </div>
+        </div>
 </head>
 <body>
     
 </body>
 <script>
-      const monchiffre = document.getElementById('monChiffre')
+    const monchiffre = document.getElementById('monChiffre')
+    const monChiffres = document.getElementById('monChiffres')
     const madatedyn = document.getElementById('madatedyn')
   function getQueryParams(){
     const params = new URLSearchParams(window.location.search)
@@ -106,12 +107,15 @@
   }
   const data = getQueryParams()
   const resultElement = document.getElementById('monChiffre')
+  const resultElement2 = document.getElementById('monChiffres')
   const resultElement1 = document.getElementById('madatedyn')
+  resultElement2.innerHTML= ` <p>${data.monmontant+"CFA"}</p>`
   resultElement.innerHTML =
  
   `
 
     <strong></strong>${data.monmontant +'FCA' || 'non renseigne'}<br>
+    
    
 
 
