@@ -11,7 +11,7 @@
             <div class="settings">
                 <img src="../img/images-removebg-preview.png" alt="">
             </div>
-            <p class="chiffre">40000FCFA
+            <p class="chiffre" id="monChiffre">40000FCFA 
                 <img src="../img/avdg4wuu4.webp" alt="">
             </p>
         </div>
@@ -27,7 +27,7 @@
                
                   
                 <h3 class="titreRetraits">cotisation</h3>
-                <span class="dateOperationRetraits"> 27/12/2024</span>
+                <span class="dateOperationRetraits" id="madatedyn"> 27/12/2024</span>
                 
                 <h3 class="titreDepots">cotisation </h3>
                 <span class="dateOperationDepots">27/12/2024</span>
@@ -92,5 +92,44 @@
 <body>
     
 </body>
+<script>
+    const monchiffre = document.getElementById('monChiffre')
+    const madatedyn = document.getElementById('madatedyn')
+  function getQueryParams(){
+    const params = new URLSearchParams(window.location.search)
+    const data = {}
+    params.forEach((value, key)=>{
+       data[key] = value
+    })
+    return data
+  }
+  const data = getQueryParams()
+  const resultElement = document.getElementById('monChiffre')
+  const resultElement1 = document.getElementById('madatedyn')
+  resultElement.innerHTML =
+ 
+  `
 
+    <strong></strong>${data.monmontant +'FCA' || 'non renseigne'}<br>
+   
+
+
+  `
+  resultElement1.innerHTML =` <span>${data.madate1  || 'non renseigne'}</span><br>`
+
+//   const form = document.createElement('form')
+//     form.method = "post"
+//     form.action = "http://127.0.0.1:5500/Tontine/CotisationAuto/CotisationAuto.html"
+//     for(const key in data){
+//         const input = document.createElement('input')
+//         input.type = "hidden"
+//         input.name = key
+//         input.value = data[key]
+//         form.appendChild(input)
+      
+//     }
+//     document.body.appendChild(form)
+//     form.submit()
+
+</script>
 </html>

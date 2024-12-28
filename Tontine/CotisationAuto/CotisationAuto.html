@@ -11,29 +11,48 @@
 <body>
     <div class="container" id="container" >
         <p class="inscription">veuiller vous inscrire</p>
-        <form action="../TontineAccueil.html" class="form" method="get">
-            <input type="text" placeholder="nom" class="form-control" id="nom" > <br> <br>
-            <input type="text" placeholder="prenom" class="form-control" id="prenom" ><br> <br>
-            <input type="email" placeholder="email" class="form-control" id="email" ><br> 
+        <form action="../TontineAccueil.html" class="form" method="get" id="form">
+            <!--<input type="text" placeholder="nom" class="form-control" id="nom" required > <br> <br>
+            <input type="text" placeholder="prenom" class="form-control" id="prenom" required ><br> <br>
+            <input type="email" placeholder="email" class="form-control" id="email" required ><br>  -->
             <p>veuiller choisir votre montant de cotisation</p>
-            <select name="" id="" class="form-select">
-                <option value="">Veuiller choisir une option</option>
-                <option value="100">100FCFA</option>
-                <option value="200">200FCFA</option>
-                <option value="300">300FCFA</option>
-                <option value="400">400FCFA</option>
-                <option value="500">500FCFA</option>
-                <option value="600">500FCFA</option>
+            <!-- <select name="" id="" class="form-select" required>
+                <option value="choix"   >Veuiller choisir une option</option>
+                <option value="100" name="name" id="option1">100FCFA</option>
+                <option value="200" id="option2">200FCFA</option>
+                <option value="300" id="option3">300FCFA</option>
+                <option value="400" id="option4">400FCFA</option>
+                <option value="500" id="option5">500FCFA</option>
+                <option value="600" id="option6">500FCFA</option>
              
-            </select>
+            </select><br> -->
+            <input type="number" class="form-control" name="monmontant" value="" placeholder="mettre un montant">
             <label for="">veuiler mettre la date de debut</label> <br> <br>
-            <input type="date" name="" id=""  class="form-control" ><br> <br>
+            <input type="date" name="madate" id="madateimpo"  class="form-control"  required><br> <br>
             <label for="">veuiler mettre la date finale</label> <br> <br>
-            <input type="date" name="" id=""  class="form-control" ><br> <br>
-            <input type="checkbox"placeholder=""> veuiler savoir qu'apres validation il est impossible de revenir en arriere <br> <br>
+            <input type="date" name="madate1" id="madateimpo1"  class="form-control" required ><br> <br>
+            <input type="checkbox"placeholder="" required> veuiler savoir qu'apres validation il est impossible de revenir en arriere <br> <br>
          
-            <input type="submit" value="valider" class="btn btn-outline-primary" >
+            <input type="submit" value="valider" class="btn btn-outline-primary" id="monInput">
         </form>
     </div>
 </body>
+<script>
+const option1 = document.getElementById('option1')
+const option2 = document.getElementById('option2')
+const option3 = document.getElementById('option3')
+const option4 = document.getElementById('option4')
+const option5 = document.getElementById('option5')
+const option6 = document.getElementById('option6')
+//const form = document.getElementById('form')
+const madateimpo = document.getElementById('madateimpo')
+const madateimpo1 = document.getElementById('madateimpo1')
+const monInput = document.getElementById('monInput');
+
+monInput.addEventListener("click", ()=>{
+    console.log("message envoye");
+    
+})
+
+</script>
 </html>

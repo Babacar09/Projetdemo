@@ -12,7 +12,7 @@
             <div class="settings">
                 <img src="./img/images-removebg-preview.png" alt="">
             </div>
-            <p class="chiffre">40000FCFA
+            <p class="chiffre" id="monChiffre">40000FCFA
                 <img src="./img/avdg4wuu4.webp" alt="">
             </p>
         </div>
@@ -28,7 +28,7 @@
                
                   
                 <h3 class="titreRetraits">cotisation</h3>
-                <span class="dateOperationRetraits"> 27/12/2024</span>
+                <span class="dateOperationRetraits" id="mesDates"> 27/12/2024</span>
                 
                 <h3 class="titreDepots">cotisation </h3>
                 <span class="dateOperationDepots">27/12/2024</span>
@@ -93,5 +93,50 @@
 <body>
     
 </body>
+<script>
+      const monchiffre = document.getElementById('monChiffre')
+    const madatedyn = document.getElementById('madatedyn')
+  function getQueryParams(){
+    const params = new URLSearchParams(window.location.search)
+    const data = {}
+    params.forEach((value, key)=>{
+       data[key] = value
+    })
+    return data
+  }
+  const data = getQueryParams()
+  const resultElement = document.getElementById('monChiffre')
+  const resultElement1 = document.getElementById('madatedyn')
+  resultElement.innerHTML =
+ 
+  `
 
+    <strong></strong>${data.monmontant +'FCA' || 'non renseigne'}<br>
+   
+
+
+  `
+//   resultElement1.innerHTML =` <span>${data.madate1  || 'non renseigne'}</span><br>`
+
+  function updateDateTime(){
+    const now = new Date();
+    const options ={
+        weekday:"long",
+        year:"numeric",
+        month:"long",
+        day:"2-digit",
+        hour:"2-digit"
+        //minute:"2-digit",
+        //second:"2-digit",
+        
+    }
+    const formattedDateTime = now.toLocaleDateString('fr-FR', options)
+    document.getElementById('mesDates').textContent = formattedDateTime
+
+    
+ 
+  }
+  setInterval(updateDateTime, 1000)
+  updateDateTime()
+</script>
 </html>
