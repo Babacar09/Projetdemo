@@ -27,6 +27,6 @@ document.getElementById("debitForm").addEventListener("submit", function (e) {
 });
  
 document.getElementById("backToBalance").addEventListener("click", function () {
-    window.location.href = "file:///C:/Users/Hp/Desktop/Prosdemo/index.html";
+    window.location.href = "https://babacar09.github.io/Projetdemo/index.html";
   });
 
