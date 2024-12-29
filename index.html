@@ -108,9 +108,9 @@
 <body>
 <script>
   if(!localStorage.getItem("solde")){
-    localStorage.setItem("solde", 100000)
+    localStorage.setItem("solde", 1000000)
   }
-  const solde = localStorage.getItem("solde");
+  const solde = localStorage.getItem("solde")
   document.getElementById('solde').textContent= `Solde actuel:${solde}$`
   document.getElementById('goToDebit').addEventListener("click", function(){
     window.location.href= "http://127.0.0.1:5500/Tontine/CotisationManu/CotisationAccueilManu.html"
