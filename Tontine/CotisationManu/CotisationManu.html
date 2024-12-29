@@ -13,7 +13,9 @@
         <div class="monimg">
             <img src="./monimg/360_F_325752548_m6byTEwIOcR9f1TSbPUFmmuAtoVSsoqU.jpg" alt="">
         </div>
-       <form action="../CotisationManu/CotisationAccueilManu.html" method="get">
+       <form action="../CotisationManu/CotisationAccueilManu.html" method="get" id="form2" >
+        
+       
         <p>veuiller choisir votre montant de cotisation</p>
         <input type="number" class="form-control" id="monmontant" name="monmontant" placeholder="montant"> <br>
         <!-- <select name="" id="" class="form-select">
@@ -28,6 +30,35 @@
         </select><br> -->
         <input type="submit" value="valider" class="btn btn-outline-primary" id="valid">
        </form>
+       <div class="block7">
+        <form action="../CotisationManu/CotisationAccueilManu.html" id="form1">
+            <input type="number" id="somme1" placeholder="entrer une somme">
+            <button type="submit" class="btn btn-outline-primary">valider</button>
+           </form>
+        </div>
     </div>
+
+
 </body>
+<script>
+
+
+
+// document.getElementById("form1").addEventListener("submit", function (e) {
+//       e.preventDefault(); // Empêche le rechargement de la page
+
+//       // Récupérer la valeur entrée
+//       const somme1 = document.getElementById("somme1").value;
+
+//       // Stocker la somme dans localStorage
+//       localStorage.setItem("somme1", somme1);
+
+//       // Rediriger vers la deuxième page
+//       window.location.href = "http://127.0.0.1:5500/Tontine/CotisationManu/CotisationAccueilManu.html";
+//     });
+
+
+
+ 
+</script>
 </html>
