@@ -25,7 +25,8 @@ document.getElementById("debitForm").addEventListener("submit", function (e) {
 
   }
 });
-
+ 
 document.getElementById("backToBalance").addEventListener("click", function () {
-  window.location.href = "index.html";
-});
+    window.location.href = "file:///C:/Users/Hp/Desktop/Prosdemo/index.html";
+  });
+
