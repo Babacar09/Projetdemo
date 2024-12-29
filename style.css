@@ -11,7 +11,7 @@
     border: 10px solid rgb(244, 244, 244);
     height: auto;
     width: 335PX;
-    background: blue;
+    
     margin-top: 50PX;
     border-radius: 10PX;
     box-shadow: 10PX, 10PX, 10PX, 10PX rgba(55, 55, 55, 0.943)
@@ -52,10 +52,10 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    color: #fff;
+    color: #000000;
     font-size: 25PX;
     text-shadow: rgba(0, 0, 0, 0.6);
-    background: blue;
+    /* background: blue; */
     font-weight: bold;
 
 }
@@ -195,11 +195,7 @@ background: #fff;
    
    
 }
-.block5  .dateOperationDepots{
-    /* display: inline-flex; */
- 
 
-}
 .block5 .montantDesOperations{
 margin-left: 164PX;
 padding-top: 10PX;
@@ -223,5 +219,8 @@ font-weight: bold;
     font-size: 18PX;
     font-weight: 600;
     color: blue;
+}
+button{
+    margin-left: 30%;
 }
 
